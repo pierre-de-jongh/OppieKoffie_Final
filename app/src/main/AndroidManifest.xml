@@ -21,7 +21,7 @@
             android:label="@string/title_activity_home"
             android:theme="@style/Theme.MyApplication.NoActionBar" />
         <activity
-            android:name=".AccountAcctivity"
+            android:name=".ui.account.AccountFragment"
             android:exported="false"
             android:label="@string/title_activity_login_google" />
         <activity

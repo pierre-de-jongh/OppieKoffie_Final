@@ -1,14 +1,18 @@
-package com.example.myapplication;
+package com.example.myapplication.ui.account;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.myapplication.MainActivity;
+import com.example.myapplication.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -18,7 +22,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
-public class AccountAcctivity extends AppCompatActivity {
+public class AccountFragment extends Fragment {
 
     TextView profileName, profileEmail, profileUsername, profilePassword;
     TextView titleName, titleUsername;
@@ -28,47 +32,42 @@ public class AccountAcctivity extends AppCompatActivity {
     private FirebaseUser currentUser;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_account);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_account, container, false);
 
-        profileName = findViewById(R.id.profileName);
-        profileEmail = findViewById(R.id.profileEmail);
-        profileUsername = findViewById(R.id.profileUsername);
-        profilePassword = findViewById(R.id.profilePassword);
-        titleName = findViewById(R.id.titleName);
-        titleUsername = findViewById(R.id.titleUsername);
-        editProfile = findViewById(R.id.editButton);
-        logoutButton = findViewById(R.id.logoutButton);
+        profileName = view.findViewById(R.id.profileName);
+        profileEmail = view.findViewById(R.id.profileEmail);
+        profileUsername = view.findViewById(R.id.profileUsername);
+        profilePassword = view.findViewById(R.id.profilePassword);
+        titleName = view.findViewById(R.id.titleName);
+        titleUsername = view.findViewById(R.id.titleUsername);
+
+        logoutButton = view.findViewById(R.id.logoutButton);
 
         mAuth = FirebaseAuth.getInstance();
         currentUser = mAuth.getCurrentUser();
 
         if (currentUser == null) {
             // User is not logged in, redirect to login activity
-            startActivity(new Intent(AccountAcctivity.this, MainActivity.class));
-            finish();
+            startActivity(new Intent(getActivity(), MainActivity.class));
+            getActivity().finish();
         } else {
             String usernameUser = currentUser.getUid(); // Use UID as the username or choose a unique identifier
 
             showAllUserData(usernameUser);
 
-            editProfile.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    passUserData();
-                }
-            });
 
             logoutButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     mAuth.signOut();
-                    startActivity(new Intent(AccountAcctivity.this, MainActivity.class));
-                    finish();
+                    startActivity(new Intent(getActivity(), MainActivity.class));
+                    getActivity().finish();
                 }
             });
         }
+
+        return view;
     }
 
     public void showAllUserData(String username) {
@@ -98,7 +97,7 @@ public class AccountAcctivity extends AppCompatActivity {
         });
     }
 
-    public void passUserData(){
+    public void passUserData() {
         String userUsername = profileUsername.getText().toString().trim();
 
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Registered Users");

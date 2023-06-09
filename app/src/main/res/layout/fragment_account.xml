@@ -79,7 +79,7 @@
                     android:gravity="center"
                     android:text="27"
                     android:textAlignment="center"
-                    android:textColor="@color/brown"
+                    android:textColor="@color/black"
                     android:textSize="26sp"
                     android:textStyle="bold" />
 
@@ -89,7 +89,7 @@
                     android:layout_height="wrap_content"
                     android:text="Orders"
                     android:textAlignment="center"
-                    android:textColor="@color/brown"
+                    android:textColor="@color/black"
                     android:textSize="16sp" />
 
             </LinearLayout>
@@ -110,7 +110,7 @@
                     android:gravity="center"
                     android:text="455"
                     android:textAlignment="center"
-                    android:textColor="@color/brown"
+                    android:textColor="@color/black"
                     android:textSize="26sp"
                     android:textStyle="bold" />
 
@@ -120,7 +120,7 @@
                     android:layout_height="wrap_content"
                     android:text="Loyalty Points"
                     android:textAlignment="center"
-                    android:textColor="@color/brown"
+                    android:textColor="@color/black"
                     android:textSize="16sp" />
 
             </LinearLayout>
@@ -141,7 +141,7 @@
                     android:gravity="center"
                     android:text="413"
                     android:textAlignment="center"
-                    android:textColor="@color/brown"
+                    android:textColor="@color/black"
                     android:textSize="26sp"
                     android:textStyle="bold" />
 
@@ -151,7 +151,7 @@
                     android:layout_height="wrap_content"
                     android:text="Current Order"
                     android:textAlignment="center"
-                    android:textColor="@color/brown"
+                    android:textColor="@color/black"
                     android:textSize="16sp" />
 
             </LinearLayout>
@@ -174,7 +174,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Name"
-                android:textColor="@color/brown"
+                android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -195,7 +195,7 @@
             android:layout_height="1dp"
             android:layout_margin="10dp"
             android:alpha="0.5"
-            android:background="@color/brown" />
+            android:background="@color/black" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -210,7 +210,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Email"
-                android:textColor="@color/brown"
+                android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -231,7 +231,7 @@
             android:layout_height="1dp"
             android:layout_margin="10dp"
             android:alpha="0.5"
-            android:background="@color/brown" />
+            android:background="@color/black" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -246,7 +246,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="ID"
-                android:textColor="@color/brown"
+                android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -267,7 +267,7 @@
             android:layout_height="1dp"
             android:layout_margin="10dp"
             android:alpha="0.5"
-            android:background="@color/brown" />
+            android:background="@color/black" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -282,7 +282,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Mobile"
-                android:textColor="@color/brown"
+                android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -304,26 +304,15 @@
         android:background="@drawable/edit_btn"
         android:layout_width="0dp"
         android:layout_height="60dp"
-        android:id="@+id/editButton"
-        android:text="Edit Profile"
+        android:id="@+id/logoutButton"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:text="Logout"
         android:textSize="18sp"
         app:cornerRadius="40dp"
-        app:layout_constraintBottom_toTopOf="@id/logoutButton"
         app:layout_constraintEnd_toEndOf="@id/linearLayout"
         app:layout_constraintStart_toStartOf="@id/linearLayout"
         app:layout_constraintTop_toBottomOf="@id/linearLayout"/>
 
-    <Button
-        android:background="@drawable/edit_btn"
-        android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:id="@+id/logoutButton"
-        android:text="Logout"
-        android:textSize="18sp"
-        app:cornerRadius="40dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/linearLayout"
-        app:layout_constraintStart_toStartOf="@id/linearLayout"
-        app:layout_constraintTop_toBottomOf="@id/editButton"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

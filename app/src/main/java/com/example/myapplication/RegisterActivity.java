@@ -18,6 +18,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import com.example.myapplication.ui.account.AccountFragment;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -176,7 +177,7 @@ public class RegisterActivity extends AppCompatActivity {
                                         firebaseUser.sendEmailVerification();
 
                                         Toast.makeText(RegisterActivity.this,"User Registered Successfully. Please Verify Your Email",Toast.LENGTH_LONG).show();
-                                        Intent intent=new Intent(RegisterActivity.this, AccountAcctivity.class);
+                                        Intent intent=new Intent(RegisterActivity.this, AccountFragment.class);
                                         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK
                                                 |Intent.FLAG_ACTIVITY_NEW_TASK );
                                         startActivity(intent);
