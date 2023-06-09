@@ -17,6 +17,7 @@ public class HomeActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
 private ActivityHomeBinding binding;
+/////asddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
