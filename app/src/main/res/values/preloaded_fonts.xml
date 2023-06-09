@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/bad_script</item>
+        <item>@font/bangers</item>
+        <item>@font/bellota_bold</item>
+        <item>@font/fira_code_light</item>
+        <item>@font/homemade_apple</item>
+        <item>@font/open_sans_extrabold_italic</item>
+        <item>@font/sofia</item>
+        <item>@font/work_sans_black</item>
+        <item>@font/yellowtail</item>
+    </array>
+</resources>

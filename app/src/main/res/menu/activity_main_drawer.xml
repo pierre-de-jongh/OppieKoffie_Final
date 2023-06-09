@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/baseline_home_24"
+            android:title="@string/menu_home"
+            android:iconTint="@color/white"/>
+        <item
+            android:id="@+id/nav_shop"
+            android:icon="@drawable/baseline_coffee_24"
+            android:title="Shop"
+            android:iconTint="@color/white"/>
+        <item
+            android:id="@+id/nav_QR"
+            android:icon="@drawable/baseline_qr_code_24"
+            android:title="Scan"
+            android:iconTint="@color/white"/>
+        <item
+            android:id="@+id/nav_cart"
+            android:icon="@drawable/baseline_shopping_cart_24"
+            android:title="Cart"
+            android:iconTint="@color/white"/>
+        <item
+            android:id="@+id/nav_orders"
+            android:icon="@drawable/baseline_checklist_24"
+            android:title="Orders"
+            android:iconTint="@color/white"/>
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/baseline_manage_accounts_24"
+            android:title="Account"
+            android:iconTint="@color/white"/>
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/baseline_logout_24"
+            android:title="Logout"
+            android:iconTint="@color/white"/>
+    </group>
+</menu>
