@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -10,6 +9,14 @@
         android:name="com.example.myapplication.ui.home.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
+
+    <action
+        android:id="@+id/action_homeFragment_to_nav_QR"
+        app:destination="@id/nav_QR" />
+
+    <action
+        android:id="@+id/action_homeFragment_to_nav_shop"
+        app:destination="@id/nav_shop" />
 
     <fragment
         android:id="@+id/nav_gallery"
@@ -28,5 +35,54 @@
         android:name="com.example.myapplication.ui.account.AccountFragment"
         android:label="Account"
         tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/nav_orders"
+        android:name="com.example.myapplication.ui.orders.OrdersFragment"
+        android:label="Orders"
+        tools:layout="@layout/fragment_account" />
+
+    <fragment
+        android:id="@+id/nav_QR"
+        android:name="com.example.myapplication.ui.qrcode.QRFragment"
+        android:label="QR Code"
+        tools:layout="@layout/activity_qr_code" />
+
+    <fragment
+        android:id="@+id/nav_shop"
+        android:name="com.example.myapplication.ui.shop.ShopFragment"
+        android:label="@string/menu_shop"
+        tools:layout="@layout/fragment_shop" />
+
+    <fragment
+        android:id="@+id/productDetailFragment"
+        android:name="com.example.myapplication.ui.ProductDetailFragment.ProductDetailFragment"
+        android:label="Product Detail"
+        tools:layout="@layout/fragment_product_detail" />
+    <action
+        android:id="@+id/action_homeFragment_to_productDetailFragment"
+        app:destination="@id/productDetailFragment" />
+    <fragment
+        android:id="@+id/nav_cart"
+        android:name="com.example.myapplication.ui.cart.CartFragment"
+        android:label="Cart"
+        tools:layout="@layout/fragment_cart" />
+
+    <fragment
+        android:id="@+id/CheckoutFragment"
+        android:name="com.example.myapplication.ui.checkout.CheckoutFragment"
+        android:label="Checkout"
+        tools:layout="@layout/fragment_checkout" />
+    <action
+        android:id="@+id/action_CheckoutFragment_to_HomeFragment"
+        app:destination="@id/nav_home" />
+    <action
+        android:id="@+id/action_CartFragment_to_CheckoutFragment"
+        app:destination="@id/CheckoutFragment" >
+        <argument
+            android:name="totalPrice"
+            app:argType="integer" />
+    </action>
+
+
 
 </navigation>

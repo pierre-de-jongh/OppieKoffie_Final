@@ -25,6 +25,11 @@
             android:exported="false"
             android:label="@string/title_activity_login_google" />
         <activity
+            android:name=".ui.OrderDetailsActivity"
+            android:label="Order Details" />
+
+
+        <activity
             android:name=".RegisterActivity"
             android:exported="false" />
         <activity
@@ -36,6 +41,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ui.qrcode.QRFragment"
+            android:label="QR Code Activity">
+        </activity>
+
 
         <meta-data
             android:name="preloaded_fonts"

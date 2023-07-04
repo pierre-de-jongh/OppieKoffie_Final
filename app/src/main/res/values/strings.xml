@@ -11,6 +11,7 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="menu_shop">Shop</string>
     <string-array name="genders">
         <item>Male</item>
         <item>Female</item>
@@ -26,4 +27,27 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string-array name="sizes_array">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+    <string-array name="milk_array">
+        <item>Regular</item>
+        <item>Low Fat</item>
+        <item>Almond</item>
+    </string-array>
+    <string-array name="sugar_array">
+        <item>Brown</item>
+        <item>White</item>
+    </string-array>
+    <string-array name="sugar_quantity_array">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
 </resources>

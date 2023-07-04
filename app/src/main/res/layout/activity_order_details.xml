@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_view_order_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:text="Order Details" />
+
+    <ListView
+        android:id="@+id/list_view_order_items"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/button_order_again"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Order Again"
+            android:background="@drawable/edit_btn"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"/>
+
+        <Button
+            android:id="@+id/button_home"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:background="@drawable/edit_btn"
+            android:textColor="@color/white"
+            android:layout_marginLeft="45dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

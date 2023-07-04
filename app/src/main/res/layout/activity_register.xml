@@ -14,17 +14,15 @@
         tools:context=".RegisterActivity">
 
         <LinearLayout
-            android:background="@color/brown"
+            android:background="@color/gray"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="180dp"
                 android:background="@color/black">
-
 
                 <TextView
                     android:id="@+id/textView_register_head"
@@ -85,7 +83,7 @@
                         android:layout_height="wrap_content"
                         android:layout_toEndOf="@id/imageViewName"
                         android:padding="6dp"
-                        android:textColor="@color/brown"
+                        android:textColor="@color/black"
                         android:textStyle="bold"
                         android:text="Full Name*" />
 
@@ -134,7 +132,7 @@
                         android:layout_height="wrap_content"
                         android:layout_toEndOf="@id/imageViewEmail"
                         android:padding="6dp"
-                        android:textColor="@color/brown"
+                        android:textColor="@color/black"
                         android:textStyle="bold"
                         android:text="Email*" />
 
@@ -183,7 +181,7 @@
                         android:layout_height="wrap_content"
                         android:layout_toEndOf="@id/imageViewDoB"
                         android:padding="6dp"
-                        android:textColor="@color/brown"
+                        android:textColor="@color/black"
                         android:textStyle="bold"
                         android:text="Date of Birth (dd/mm/yyyy)*" />
 
@@ -243,7 +241,7 @@
                         android:layout_height="wrap_content"
                         android:layout_toEndOf="@id/imageViewGender"
                         android:padding="6dp"
-                        android:textColor="@color/brown"
+                        android:textColor="@color/black"
                         android:textStyle="bold"
                         android:text="Gender*" />
 
@@ -267,7 +265,7 @@
                             android:id="@+id/radio_female"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:buttonTint="@color/brown"
+                            android:buttonTint="@color/black"
                             android:text="Female"
                             android:textColor="#555555"
                             android:textSize="16sp" />
@@ -277,7 +275,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
-                            android:buttonTint="@color/brown"
+                            android:buttonTint="@color/black"
                             android:text="Male"
                             android:textColor="#555555"
                             android:textSize="16sp" />
@@ -307,7 +305,7 @@
                         android:layout_height="wrap_content"
                         android:layout_toEndOf="@id/imageViewMobile"
                         android:padding="6dp"
-                        android:textColor="@color/brown"
+                        android:textColor="@color/black"
                         android:textStyle="bold"
                         android:text="Mobile*" />
 
@@ -356,7 +354,7 @@
                         android:layout_height="wrap_content"
                         android:layout_toEndOf="@id/imageViewPwd"
                         android:padding="6dp"
-                        android:textColor="@color/brown"
+                        android:textColor="@color/black"
                         android:textStyle="bold"
                         android:text="Password*" />
 
@@ -399,7 +397,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/RL_pwd"
                     android:layout_marginTop="10dp"
-                    android:buttonTint="@color/brown"
+                    android:buttonTint="@color/black"
                     android:focusable="true"
                     android:focusableInTouchMode="true"
                     android:text="I agree with the Terms of Service and Privacy Policy"
@@ -414,7 +412,7 @@
                     android:layout_marginTop="50dp"
                     android:layout_marginBottom="50dp"
                     android:textColor="@color/white"
-                    android:backgroundTint="@color/brown"
+                    android:backgroundTint="@color/black"
                     android:textStyle="bold"
                     android:text="Register" />
 

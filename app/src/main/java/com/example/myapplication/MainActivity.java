@@ -229,11 +229,11 @@ public class MainActivity extends AppCompatActivity {
     private void navigateToHomeActivity() {
         Intent intent = new Intent(MainActivity.this, HomeActivity.class);
         startActivity(intent);
-        finish();  // Optional: Finish the current activity to prevent returning to it with back button
+        finish();
     }
 
     private void showGenderDialog(GenderDialogCallback callback) {
-        String userGender = "Unknown";  // Default value for gender
+        String userGender = "Unknown";  // De0fault value for gender
 
         AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
         builder.setTitle("Select Gender")
